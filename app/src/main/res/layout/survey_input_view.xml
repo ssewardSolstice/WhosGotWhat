@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:context="${packageName}.${activityClass}"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/SurveyButtonStyle"
+            android:drawableLeft="@drawable/android"
+            android:text="@string/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:onClick="androidTapped"/>
+
+        <TextView
+            style="@style/SurveyButtonStyle"
+            android:drawableLeft="@drawable/apple"
+            android:text="@string/iphone"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:onClick="iPhoneTapped"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
